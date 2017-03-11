@@ -1,0 +1,10 @@
+<!--
+Este html puede usarse como base para constuir otros HTMLs
+Incluye una cabecera (header 1) y un footer (footer 1). Entre ambos, se puede definir
+código HTML, que estará embebido en un div cuya id es "content"
+ -->
+{% include "core/headers/headers1.html" %}
+<div id="content">
+    {% block content %}{% endblock %}
+</div>
+{% include "core/footers/footer1.html" %}

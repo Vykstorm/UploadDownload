@@ -1,0 +1,31 @@
+<!-- Cabecera para los documentos HTML.
+- Marcas en el documento a reemplazar:
+    "title" => titulo de la página
+- Dependencias con ficheros estáticos / urls externas:
+    static/css/bootstrap.min.css
+-->
+
+<!-- Establecemos el tipo de documento -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Códificación UTF-8 -->
+        <meta charset="utf-8">
+        <!-- Directiva por compatibilidad con IExplorer y edge -->
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- Título de la página -->
+        <title>{{title}}</title>
+        <!-- Descripción del contenido -->
+        <meta name="description" content="Website where u can upload and download files easily">
+        <!-- Ajuste de la página a la resolución del dispositivo -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Palabras clave para indexar la web -->
+        <meta name="keywords" content="upload,download,files,file storage, file sharing">
+
+
+        <!-- Inclusión de estilos -->
+        <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+        <!-- Inclusión de scripts -->
+    </head>
+    <body>

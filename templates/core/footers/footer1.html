@@ -1,0 +1,13 @@
+<!-- Pie para los documentos HTML.
+- Marcas en el documento a reemplazar:
+    ---
+- Dependencias con ficheros estáticos / urls externas:
+    static/js/jquery.min.js
+    static/js/bootstrap.min.js
+-->
+    <!-- inclusión de scripts adicionales -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"/>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"/>
+
+    </body>
+</html>
